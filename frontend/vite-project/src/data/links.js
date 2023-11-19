@@ -1,15 +1,16 @@
+
 export const links=[
     {
-        link: "home"
+        link: "HOME"
     },
     {
-        link: "eduction"
+        link: "EDUCATION"
     },
     {
-        link: "community"
+        link: "COMMUNITY"
     },
     {
-        link: "contact"
+        link: "CONTACT"
     }
 ]
 
