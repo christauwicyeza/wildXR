@@ -1,13 +1,13 @@
-import aboutUs from "../components/layout/sections/AboutUs";
+import AboutUs from "../components/layout/sections/AboutUs";
 import NavBar from "../components/layout/Navbar"
 import Hero from "../components/layout/sections/Hero";
 function Home(){
 	return(
 		<>
-		<div>
+		<div className="pl-2 pr-2 pb-2 ">
 			<NavBar/>
 			<Hero/>
-			<aboutUs/>
+			<AboutUs/>
 		</div>
 
 		</>

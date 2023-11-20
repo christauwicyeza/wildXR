@@ -8,7 +8,7 @@ const Navbar=()=>{
                <div className= " flex items-center gap-5 text-primary " >
                 {links.map(({link})=>{
 return(
-    <p className="hover:text-white text-base font-extrabold">{link}</p>
+    <p className="hover:text-white text-sm font-extrabold">{link}</p>
 )
                 })}
                </div>
