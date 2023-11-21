@@ -4,7 +4,7 @@ import Hero from "../components/layout/sections/Hero";
 function Home(){
 	return(
 		<>
-		<div className="pl-2 pr-2 pb-2 ">
+		<div>
 			<NavBar/>
 			<Hero/>
 			<AboutUs/>
