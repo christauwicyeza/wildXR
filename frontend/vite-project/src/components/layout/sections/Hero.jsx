@@ -1,15 +1,12 @@
-import image from "../../../assets/images/wild5.jpg";
+import "../../../../src/index.css"
+
 const Hero = ()=>{
 return(
     <div>
         <div className=' flex  h-full w-full relative py-8 '>
         <div className="w-full h-full  flex items-center bject-cover absolute mix-blend-overlay justify-center text-center">
-      <div className="background">
-        <div className="background-image z-10"></div>
-        <div className="background-image z-20"></div>
-      </div>
-    </div>
-    {/* <img src={image} className="w-full h-full object-cover absolute mix-blend-overlay"/> */}
+      <div className="background-image"> </div></div>
+  
           <div className="h-screen w-screen flex items-center justify-center text-center">
             <div className="p-24 ">
             <h1 className="text-white text-8xl text-center font-bold">WILD<span className="text-black text-7xl">XR</span> </h1>

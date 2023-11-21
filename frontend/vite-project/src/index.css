@@ -21,16 +21,16 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: zoom 20s infinite;
+  animation: zoom  20s infinite, change-image 20s infinite;
 }
 
-.background-image:nth-child(1) {
-  background-image: url(assets/images/wild1.jpg) ;
+.background-image:nth-child(1){
+  background-image: url(assets/images/wild5.jpg);
   z-index: 10;
-}
+} 
 
 .background-image:nth-child(2) {
-  background-image: url(assets/images/wild5.jpg);
+  background-image: url(assets/images/wild3.jpg);
   z-index: 20;
 }
 
@@ -43,5 +43,14 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes change-image {
+  0%, 100% {
+    background-image: url(assets/images/wild3.jpg);
+  }
+  50% {
+    background-image: url(assets/images/wild5.jpg);
   }
 }
