@@ -1,14 +1,22 @@
+import Pangolin from "../../../assets/images/PANGOLIN.jpeg"
+import Elephant from "../../../assets/images/africanElephant.jpg"
+import AmurLeo from "../../../assets/images/amur_leopard.jpg"
+import HoneyBag from "../../../assets/images/honeybadger.jpeg"
+import humpbackWhale from "../../../assets/images/humpbackWhale.jpeg"
+import mimicOctopus from "../../../assets/images/mimicOctopus.jpg"
+import monarchButterfly from "../../../assets/images/mornchButterfly.jpeg"
+import snowLeopard from "../../../assets/images/snowLeopard.jpeg"
 const Card= () => {
   const cards = [
     {
       id: 1,
-      image: "https://picsum.photos/200/300?random=1",
-      title: "Card 1",
+      image: "{pangolin}",
+      title: "Meet the precious PANGOLIN ",
       description: "This is a description of card 1.",
     },
     {
       id: 2,
-      image: "https://picsum.photos/200/300?random=2",
+      image: "{Elephant}",
       title: "Card 2",
       description: "This is a description of card 2.",
     },
@@ -65,7 +73,8 @@ const Card= () => {
   return (
     <div className="bg-black">
       <h1 className="text-6xl font-bold mb-4 text-orange-300 text-center">Wildlife Diversity</h1>
-      <p className="text-gray-500 mb-8 text-center font-bold"> CONSERVATION AND SUSTAINABILITY</p>
+      <h2 className="text-gray-500 mb-8 text-center font-bold"> <span className=" text-primay ">CONSERVATION</span> AND <span className=" text-primary">SUSTAINABILITY</span> </h2>
+      <p className="text-gray-300 mb-8 text-center font-bold">Explore exceptional resources about wildlife and learn  </p>
       <div className="flex flex-wrap justify-center">
         {cards.map((card) => (
           <div key={card.id} className="m-4 relative w-64 h-64 bg-black rounded-lg overflow-hidden">
