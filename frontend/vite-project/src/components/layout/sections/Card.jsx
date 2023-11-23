@@ -1,22 +1,14 @@
-import Pangolin from "../../../assets/images/PANGOLIN.jpeg"
-import Elephant from "../../../assets/images/africanElephant.jpg"
-import AmurLeo from "../../../assets/images/amur_leopard.jpg"
-import HoneyBag from "../../../assets/images/honeybadger.jpeg"
-import humpbackWhale from "../../../assets/images/humpbackWhale.jpeg"
-import mimicOctopus from "../../../assets/images/mimicOctopus.jpg"
-import monarchButterfly from "../../../assets/images/mornchButterfly.jpeg"
-import snowLeopard from "../../../assets/images/snowLeopard.jpeg"
 const Card= () => {
   const cards = [
     {
       id: 1,
-      image: "{pangolin}",
+      image: "https://picsum.photos/200/300?random=1",
       title: "Meet the precious PANGOLIN ",
       description: "This is a description of card 1.",
     },
     {
       id: 2,
-      image: "{Elephant}",
+      image: "https://picsum.photos/200/300?random=2",
       title: "Card 2",
       description: "This is a description of card 2.",
     },
