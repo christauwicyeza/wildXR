@@ -1,7 +1,7 @@
 import Image1 from "../../assets/images/lionHd.jpg";
 import Image2 from '../../assets/images/birdhd.jpg';
 import Image3  from "../../assets/images/R.jpeg"
-
+import { Link } from "react-router-dom";
 const Engage = () => {
   return (
     <div className="bg-cover bg-black py-8 bg-center" id="community">
@@ -18,18 +18,19 @@ const Engage = () => {
               <h4 className="text-3xl font-bold text-white mb-2 uppercase">ASK A QUESTION</h4>
             </div>
           </Link>
-          <div className="w-1/4 h-80 p-4 rounded-md overflow-hidden relative">
+
+          <Link to="fact" className="w-1/4 h-80 p-4 rounded-md overflow-hidden relative">
             <img src={Image1} alt="wildlife" className="w-full h-full rounded-lg object-cover" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center ">
               <h4 className="text-3xl font-bold tex-black mb-2 uppercase">LEAVE A FACT</h4>
             </div>
-          </div>
-          <div className="w-1/4 h-80 p-4 rounded-md overflow-hidden relative">
+          </Link>
+          <Link to="donate" className="w-1/4 h-80 p-4 rounded-md overflow-hidden relative">
             <img src={Image3} alt="wildlife" className="w-full h-full rounded-lg object-cover" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
               <h4 className="text-3xl font-bold mb-2 uppercase">DONATE</h4>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
