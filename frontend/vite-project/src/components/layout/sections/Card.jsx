@@ -64,7 +64,7 @@ const Card= () => {
 
   return (
     <div className="bg-black">
-      <h1 className="text-6xl font-bold mb-4 text-orange-300 text-center">Wildlife Diversity</h1>
+      <h1 className="text-6xl font-bold mb-4 text-orange-300 text-center">WILDLIFE DIVERSITY</h1>
       <h2 className="text-gray-500 mb-8 text-center font-bold"> <span className=" text-primay ">CONSERVATION</span> AND <span className=" text-primary">SUSTAINABILITY</span> </h2>
       <p className="text-gray-300 mb-8 text-center font-bold">Explore exceptional resources about wildlife and learn  </p>
       <div className="flex flex-wrap justify-center">

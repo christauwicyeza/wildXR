@@ -3,6 +3,7 @@ import NavBar from "../components/layout/Navbar.jsx"
 import Hero from "../components/layout/sections/Hero.jsx";
 import  Card  from "../components/layout/sections/Card.jsx";
 import Footer from "../components/layout/sections/Footer.jsx";
+import Engage from "../components/layout/sections/Engage.jsx";
 function Home(){
 	return(
 		<>
@@ -11,6 +12,7 @@ function Home(){
 			<Hero/>
 			<AboutUs/>
 			<Card/>
+			<Engage/>
 			<Footer/>
 		</div>
 
