@@ -30,7 +30,7 @@
 } 
 
 .background-image:nth-child(2) {
-  background-image: url(assets/images/wild3.jpg);
+  background-image: url(assets/images/trees.jpg);
   z-index: 20;
 }
 
@@ -48,9 +48,9 @@
 
 @keyframes change-image {
   0%, 100% {
-    background-image: url(assets/images/wild3.jpg);
+    background-image: url(assets/images/wild5.jpg);
   }
   50% {
-    background-image: url(assets/images/wild5.jpg);
+    background-image: url(assets/images/trees.jpg);
   }
 }

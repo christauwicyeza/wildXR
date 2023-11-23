@@ -3,7 +3,7 @@ import "../../../../src/index.css"
 const Hero = ()=>{
 return(
     <div>
-        <div className=' flex  h-full w-full relative py-8 '>
+        <div className=' flex  h-full w-full relative py-6 '>
         <div className="w-full h-full  flex items-center bject-cover absolute mix-blend-overlay justify-center text-center">
       <div className="background-image"> </div></div>
   
@@ -17,7 +17,7 @@ return(
         Immerse yourself in captivating experiences
         <br />
         that forge a profound connection with our planet's diverse ecosystems.</h2></div>
-            <div className="flex justify-center gap-3 mt-5"><button className=" border-2  border-black px-5 py-1 rounded-md text-black font-bold ">About Us</button> <button className="border-2 border-primary rounded-md px-5 py-1 text-primary font-bold ">Join Us </button></div>
+            <div className="flex justify-center gap-3 mt-5"><button className=" border-2  bg-gray-100 px-5 py-1 rounded-md text-black font-bold ">About Us</button> <button className="border-2  bg-gray-100 rounded-md px-5 py-1 text-black font-bold ">Join Us </button></div>
           </div>
         </div>
       </div>
