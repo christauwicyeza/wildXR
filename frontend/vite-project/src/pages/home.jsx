@@ -1,19 +1,19 @@
-import AboutUs from "../components/layout/sections/AboutUs.jsx";
+import AboutUs from "../components/sections/AboutUs.jsx";
 import NavBar from "../components/layout/Navbar.jsx"
-import Hero from "../components/layout/sections/Hero.jsx";
-import  Card  from "../components/layout/sections/Card.jsx";
-import Footer from "../components/layout/sections/Footer.jsx";
-import Engage from "../components/layout/sections/Engage.jsx";
+import Hero from "../components/sections/Hero.jsx";
+import  Card  from "../components/sections/Card.jsx";
+import Footer from "../components/layout/Footer.jsx";
+import Engage from "../components/sections/Engage.jsx";
 function Home(){
 	return(
 		<>
 		<div>
-			<NavBar/>
+	
 			<Hero/>
 			<AboutUs/>
 			<Card/>
 			<Engage/>
-			<Footer/>
+		
 		</div>
 
 		</>
