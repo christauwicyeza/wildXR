@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const signUp = async(req, res)=> {
     try{
-        const {fullName, email, password, preference} = req.body;
+        const {fullName, email, password, preference,role} = req.body;
         const userExist = await User.findOne({email});
         const harshedPassword = await bcrypt.hash(password, 10);
         if (userExist)
@@ -15,6 +15,7 @@ export const signUp = async(req, res)=> {
         const user = await User.create({
             fullName,
             email,
+            role,
             password: harshedPassword,
          });
 
@@ -22,6 +23,7 @@ export const signUp = async(req, res)=> {
             id: user.id,
             fullName: user.fullName,
             email: user.email,
+            role: user.role
          };
 
         return res.status(200).send(data);
@@ -53,6 +55,7 @@ export const signIn = async(req, res) => {
             id: userExists.id,
             fullName: userExists.fullName,
             email: userExists.email,
+            role: userExists.role
         };
         const token = jwt.sign(returnedUser, process.env.JWT_SECRET_KEY, {
             expiresIn: "1d",

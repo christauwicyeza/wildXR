@@ -1,6 +1,6 @@
 const AboutUs = ()=>{
     return(
-        <div>
+        <div id="aboutus">
         <div className=" flex bg-black scroll-py-10 h-full w-full justify-center items-center">
           <div className="p-24">
             <h1 className=" text-orange-300 text-6xl text-center font-bold"> ABOUT</h1>

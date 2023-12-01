@@ -15,7 +15,7 @@ const EducationContentSchema = new Schema({
         type: String,
         required: true,
     },
-    externalLink:{
+    summary:{
         type: String,
         required: true,
     },

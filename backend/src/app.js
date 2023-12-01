@@ -5,6 +5,7 @@ import "dotenv/config";
 import cors from "cors";
 import educationRoute from "./routes/education.js"
 import authRoute from "./routes/authroute.js";
+import factRoute from "./routes/fact.js";
 
 const app = express();
 dotenv.config();
@@ -20,6 +21,7 @@ mongoose.connect(database).then(()=>{
     app.use(express.json())
     app.use(cors())
     app.use(educationRoute)
+    app.use(factRoute)
     app.use(authRoute)
 
 

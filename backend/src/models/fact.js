@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const ReplySchema = new Schema ({
+const FactSchema = new Schema ({
     content:{
         type: String,
     },
 });
 
-const Reply = mongoose.model("reply", ReplySchema);
-export default Reply;
+const Fact = mongoose.model("fact", FactSchema);
+export default Fact;
