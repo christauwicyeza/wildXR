@@ -1,3 +1,4 @@
+import React from "react";
 import {useState} from "react"
 import { signIn } from "../utils/api"
 import {useNavigate} from "react-router-dom"
@@ -36,7 +37,12 @@ return(
               </div>
               <button onClick={handleSubmit} type="submit" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mt-4 w-full">Login</button>
             </form>
-          <h1 classname="text-white">no acount <Link to="/signup">signup</Link></h1>
+            <div className="flex justify-center items-center ">
+             <div className="text-center text-lg text-gray-500">
+                 <h1>No account ? <Link to="/signup" className="text-green-500 pl-3 italic">signup</Link></h1>
+                  </div>
+                 </div>
+
           </div>
         </div>
       );

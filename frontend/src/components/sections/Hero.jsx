@@ -1,4 +1,5 @@
 import "../../../src/index.css"
+import React from "react";
 
 const Hero = ()=>{
 return(

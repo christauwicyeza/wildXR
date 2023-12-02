@@ -1,4 +1,4 @@
-
+import React from "react";
 const Footer = ()=>{
   return (
     <div className=" flex  pb-10 bg-black text-gray-300 h-full w-full justify-center items-center " id="contact">

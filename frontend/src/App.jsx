@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -5,7 +6,6 @@ import './App.css'
 import Home from "./pages/home"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './components/layout/Layout';
-import Question from './pages/Quetion';
 import Fact from './pages/Fact';
 import Donate from './pages/Donate';
 import Login from './pages/Login';
@@ -23,7 +23,6 @@ function App() {
      <Routes>
       <Route Path="/" element={<Layout/>}>
     <Route index element={<Home/>}/>
-    <Route path="question" element={<Question/>}/>
     <Route path="fact" element={<Fact/>}/>
     <Route path="donate" element={<Donate/>}/>
     <Route path="login" element={<Login/>}/>

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { allFacts, createFact } from '../utils/api';
 import { toast } from "react-toastify";
@@ -32,7 +31,7 @@ else {createFact(newFact).then(()=>{
 
   return (
     <div className="py-24 bg-black text-gray-300 text-center">
-      <div className="text-orange-300 text-4xl mb-8">Fact Page</div>
+      <div className="text-orange-300 text-4xl mb-8">LEAVE A Fact </div>
 <form onSubmit={handleSubmit}>
 <textarea
       value={newFact.content}
@@ -59,7 +58,10 @@ else {createFact(newFact).then(()=>{
           {facts?.map(({content})=>{
             return (
                 <>
-                <h1>{content}</h1>
+                 <div class="max-w-md mx-auto bg-primary rounded-md overflow-hidden shadow-lg my-8 ">
+                     <h1 class="text-2xl font-bold text-black p-4"> {content} </h1>
+                </div>
+
                 </>
             )
           })}

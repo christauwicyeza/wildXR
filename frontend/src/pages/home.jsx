@@ -1,3 +1,4 @@
+import React from "react";
 import AboutUs from "../components/sections/AboutUs.jsx";
 import NavBar from "../components/layout/Navbar.jsx"
 import Hero from "../components/sections/Hero.jsx";

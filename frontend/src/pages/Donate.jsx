@@ -1,3 +1,4 @@
+import React from "react";
 import Elephant from "../assets/images/africanElephant.jpg";
 import Gorilla from "../assets/images/gorilla.jpg";
 import wcs from "../assets/images/wcs.jpg";

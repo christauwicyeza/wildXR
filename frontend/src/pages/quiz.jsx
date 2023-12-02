@@ -2,79 +2,55 @@ import React from 'react';
 import dummy from "../assets/images/humpbackWhale.jpeg";
 
 const QuizPage = () => {
+  const cards = [
+    {
+      image: dummy,
+      title: 'BIG CATS!',
+      description:
+        'Do you know your big cats?',
+      url: 'https://www.wwf.org.uk/learn/quizzes/big-cats-quiz/',
+    },
+    {
+      image: dummy,
+      title: 'ANIMAL POO',
+      description:
+        'Do you know your animal poo?',
+      url: 'https://www.wwf.org.uk/learn/quizzes/',
+    },
+    {
+      image: dummy,
+      title: 'MORE QUIZES',
+      description:
+        'More fun exciting quizzes to do .',
+      url: "https://www.wwf.org.uk/learn/quizzes/",
+    },
+    
+  ];
+
   return (
-    <div className="bg-black text-gray-500 pt-24 min-h-screen p-8">
-      <div className="max-w-4xl flex items-center justify-center">
-        <div>
-          <h1 className="text-xl font-bold mb-4 text-orange-300">Kids Wildlife Fun</h1>
-          <p className="mb-8 text-right">
-            Explore exciting wildlife games and quizzes designed just for kids to have fun and learn.
-          </p>
-
-          {/* Section 1: Game */}
-          <div className="flex mb-8 ml-0">
-            <div className="max-w-md">
-              <img src={dummy} alt="Game Image 1" className="mb-4 rounded-md w-32 h-auto" />
-            </div>
-
-            <div className="max-w-md ml-4 text-left">
-              <h2 className="text-2xl font-semibold mb-2">Wildlife Adventure Game</h2>
-              <p className="mb-4">
-                Embark on an exciting wildlife adventure with our fun game. Explore the jungle, meet animals, and complete missions!
-              </p>
-              <button className="bg-orange-300 text-black px-4 py-2 rounded-md">
-                Play
-              </button>
-            </div>
-          </div>
-
-          {/* Section 2: Quiz */}
-          <div className="flex mb-8 mr-0">
-            <div className="max-w-md text-right">
-              <div className="mr-auto">
-                <h2 className="text-2xl font-semibold mb-2">Animal Kingdom Quiz 1</h2>
-                <p className="mb-4">Test your knowledge about wildlife in this interactive quiz. Are you ready to become a wildlife expert?</p>
-                <button className="bg-orange-300 text-black px-4 py-2 rounded-md">
-                  Take Quiz
-                </button>
-              </div>
-              <img src={dummy} alt="Quiz Image 1" className="mb-4 rounded-md w-32 h-auto" />
-            </div>
-          </div>
-
-          {/* Section 3: Game */}
-          <div className="flex mb-8 ml-0">
-            <div className="max-w-md">
-              <img src={dummy} alt="Game Image 2" className="mb-4 rounded-md w-32 h-auto" />
-            </div>
-
-            <div className="max-w-md ml-4 text-left">
-              <h2 className="text-2xl font-semibold mb-2">Safari Adventure Game</h2>
-              <p className="mb-4">Embark on a virtual safari, spot wildlife, and complete challenges. An adventure awaits!</p>
-              <button className="bg-orange-300 text-black px-4 py-2 rounded-md">
-                Play
-              </button>
-            </div>
-          </div>
-
-          {/* Section 4: Quiz */}
-          <div className="flex mb-8 mr-0">
-            <div className="max-w-md text-right">
-              <div className="mr-auto">
-                <h2 className="text-2xl font-semibold mb-2">Nature Quiz</h2>
-                <p className="mb-4">Discover fascinating facts about nature and wildlife in this engaging quiz. Are you ready to explore?</p>
-                <button className="bg-orange-300 text-black px-4 py-2 rounded-md">
-                  Take Quiz
-                </button>
-              </div>
-              <img src={dummy} alt="Quiz Image 2" className="mb-4 rounded-md w-32 h-auto" />
-            </div>
-          </div>
-
-          {/* Continue alternating game and quiz sections as needed */}
-        </div>
-      </div>
+    <div className="bg-black py-8">
+    <div className="text-orange-300 text-center py-12">
+      <h1 className="text-6xl text-orange-300 font-bold">PLAY AND LEARN</h1>
+      <p className="text-gray-300 text-ms mt-4">
+        Join us in protecting the world's wildlife and wild places.
+      </p>
     </div>
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-4">
+      {cards.map((card) => (
+        <div key={card.title} className="bg-black rounded-lg overflow-hidden shadow-lg flex flex-row justify-between">
+          <img src={card.image} alt={card.title} className="w-1/2 h-4/5 object-cover" />
+          <div className="p-4 w-1/2">
+            <h2 className="text-xl font-bold mb-2 text-orange-300">{card.title}</h2>
+            <p className="text-gray-300 text-base">{card.description}</p>
+            <a href={card.url} target="_blank" rel="noopener noreferrer" className=" flex-block text-center bg-orange-300 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded flex justify-center mt-4">
+              play
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+  
   );
 };
 
