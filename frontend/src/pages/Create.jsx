@@ -28,20 +28,28 @@ const Create = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    createEducation(educationContent).then(() => {
+    try {
+      await createEducation(educationContent);
+      console.log("Card created successfully");
       navigate("/");
-    });
+    } catch (error) {
+      console.error("Error creating card:", error);
+      // Handle error (e.g., display an error message to the user)
+    }
   };
-
-  const handleEdit = (e) => {
+  
+  const handleEdit = async (e) => {
     e.preventDefault();
-    editEducation(educationContent, id).then(() => {
+    try {
+      await editEducation(educationContent, id);
       navigate("/");
-    });
+    } catch (error) {
+      console.error("Error editing card:", error);
+      // Handle error (e.g., display an error message to the user)
+    }
   };
-
   return (
     <>
       {role === "admin" && (

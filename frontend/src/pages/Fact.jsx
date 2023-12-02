@@ -40,7 +40,7 @@ else {createFact(newFact).then(()=>{
         placeholder="Add a new fact..."
         rows="4"
         cols="50"
-        className="bg-red-200 text-gray-300 px-4 py-2 rounded-md mx-auto mb-4"
+        className="bg-red-200 text-gray-800 px-4 py-2 rounded-md mx-auto mb-4"
       ></textarea>
 
       <br />

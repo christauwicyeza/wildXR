@@ -33,7 +33,7 @@ return data.data
 }
 
 export async function  createEducation (educationData){
-    const url = `${import.meta.env.VITE_URL}/createEducation`
+    const url = `${import.meta.env.VITE_URL}/create`
     try{
         const data = await axios.post(url,educationData)
 console.log("dataa",data)
